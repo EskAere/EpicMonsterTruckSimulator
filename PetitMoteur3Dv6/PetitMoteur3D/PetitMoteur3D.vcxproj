@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B1AC268F-1A62-419D-B42D-E4A2796160CF}</ProjectGuid>
+    <RootNamespace>PetitMoteur3D</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfAtl>Static</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfAtl>Static</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="using fmod.props" />
+    <Import Project="config\define roots.props" />
+    <Import Project="config\physx.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="using fmod.props" />
+    <Import Project="config\define roots.props" />
+    <Import Project="config\physx.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files\Assimp\include\assimp;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files\Assimp\lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files\Assimp\include\assimp;$(IncludePath);C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files\Assimp\lib\x86;$(LibraryPath);C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>dxguid.lib;winmm.lib;dinput8.lib;d3d11.lib;d3dcompiler.lib;DXGI.lib;assimp.lib;effects11d.lib;PhysX3VehicleDEBUG.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>dxguid.lib;winmm.lib;d3d11.lib;d3dx11.lib;dxerr.lib;dinput8.lib;d3dcompiler.lib;DXGI.lib;assimp.lib;effects11.lib;PhysX3Vehicle.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="AnimationManager.cpp" />
+    <ClCompile Include="AreneGo.cpp" />
+    <ClCompile Include="BillBoardComponent.cpp" />
+    <ClCompile Include="BlackBoard.cpp" />
+    <ClCompile Include="CircusGo.cpp" />
+    <ClCompile Include="BillBoardComponentManager.cpp" />
+    <ClCompile Include="BillBoardManager.cpp" />
+    <ClCompile Include="BusGo.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="CameraManager.cpp" />
+    <ClCompile Include="ChargeurAssimp.cpp" />
+    <ClCompile Include="ContainerGo.cpp" />
+    <ClCompile Include="CrateGo.cpp" />
+    <ClCompile Include="DDSTextureLoader.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="DIManipulateur.cpp" />
+    <ClCompile Include="dispositifD3D11.cpp" />
+    <ClCompile Include="DynamicCamera.cpp" />
+    <ClCompile Include="DynamicLight.cpp" />
+    <ClCompile Include="EndState.cpp" />
+    <ClCompile Include="ExplodedBox.cpp" />
+    <ClCompile Include="ExplosionGo.cpp" />
+    <ClCompile Include="FirstPersonCamera.cpp" />
+    <ClCompile Include="FlottingCrateGo.cpp" />
+    <ClCompile Include="GameState.cpp" />
+    <ClCompile Include="GestionnaireDeTextures.cpp" />
+    <ClCompile Include="InfoDispositif.cpp" />
+    <ClCompile Include="InputComponent.cpp" />
+    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="LightManager.cpp" />
+    <ClCompile Include="MenuState.cpp" />
+    <ClCompile Include="MeshManager.cpp" />
+    <ClCompile Include="MiniCrateGo.cpp" />
+    <ClCompile Include="MonsterTruckGo.cpp" />
+    <ClCompile Include="Moteur.cpp" />
+    <ClCompile Include="MoteurWindows.cpp" />
+    <ClCompile Include="PauseState.cpp" />
+    <ClCompile Include="PetitMoteur3D.cpp" />
+    <ClCompile Include="PhysicManager.cpp" />
+    <ClCompile Include="PhysxVehicle.cpp" />
+    <ClCompile Include="PlayerCamera.cpp" />
+    <ClCompile Include="RenderManager.cpp" />
+    <ClCompile Include="SpotGo.cpp" />
+    <ClCompile Include="TextureRenderer.cpp" />
+    <ClCompile Include="TiresGo.cpp" />
+    <ClCompile Include="SimulationManager.cpp" />
+    <ClCompile Include="SkyBoxGo.cpp" />
+    <ClCompile Include="SpawnManager.cpp" />
+    <ClCompile Include="SpriteManager.cpp" />
+    <ClCompile Include="State.cpp" />
+    <ClCompile Include="StateStack.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TerrainGo.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="TunnelGo.cpp" />
+    <ClCompile Include="Vehicle4WCreate.cpp" />
+    <ClCompile Include="VehicleCreate.cpp" />
+    <ClCompile Include="VehicleFilterShader.cpp" />
+    <ClCompile Include="VehicleRaycast.cpp" />
+    <ClCompile Include="VehicleTireFriction.cpp" />
+    <ClCompile Include="WheelGo.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Animation.h" />
+    <ClInclude Include="AnimationComponent.h" />
+    <ClInclude Include="AnimationManager.h" />
+    <ClInclude Include="AreneGo.h" />
+    <ClInclude Include="CircusGo.h" />
+    <ClInclude Include="BillBoardComponent.h" />
+    <ClInclude Include="BillBoardComponentManager.h" />
+    <ClInclude Include="BillBoardManager.h" />
+    <ClInclude Include="BlackBoard.h" />
+    <ClInclude Include="BusGo.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="CameraManager.h" />
+    <ClInclude Include="chargeur.h" />
+    <ClInclude Include="ChargeurAssimp.h" />
+    <ClInclude Include="Component.h" />
+    <ClInclude Include="ContainerGo.h" />
+    <ClInclude Include="CrateGo.h" />
+    <ClInclude Include="DIManipulateur.h" />
+    <ClInclude Include="dispositif.h" />
+    <ClInclude Include="dispositifD3D11.h" />
+    <ClInclude Include="DynamicCamera.h" />
+    <ClInclude Include="DynamicLight.h" />
+    <ClInclude Include="CallBackManager.h" />
+    <ClInclude Include="EndState.h" />
+    <ClInclude Include="ExplodedBox.h" />
+    <ClInclude Include="ExplosionGo.h" />
+    <ClInclude Include="FirstPersonCamera.h" />
+    <ClInclude Include="FlottingCrateGo.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GameState.h" />
+    <ClInclude Include="GestionnaireDeTextures.h" />
+    <ClInclude Include="ICollisionHandler.h" />
+    <ClInclude Include="InfoDispositif.h" />
+    <ClInclude Include="Light.h" />
+    <ClInclude Include="LightManager.h" />
+    <ClInclude Include="MenuState.h" />
+    <ClInclude Include="MeshManager.h" />
+    <ClInclude Include="MiniCrateGo.h" />
+    <ClInclude Include="PauseState.h" />
+    <ClInclude Include="PhysxVehicle.h" />
+    <ClInclude Include="Print.h" />
+    <ClInclude Include="PVD.h" />
+    <ClInclude Include="SoundManager.h" />
+    <ClInclude Include="SpotGo.h" />
+    <ClInclude Include="TextureRenderer.h" />
+    <ClInclude Include="TiresGo.h" />
+    <ClInclude Include="SkyBoxGo.h" />
+    <ClInclude Include="SpawnManager.h" />
+    <ClInclude Include="SpriteManager.h" />
+    <ClInclude Include="State.h" />
+    <ClInclude Include="StateIdentifiers.h" />
+    <ClInclude Include="StateStack.h" />
+    <ClInclude Include="TerrainGo.h" />
+    <ClInclude Include="MonsterTruckGo.h" />
+    <ClInclude Include="Moteur.h" />
+    <ClInclude Include="MoteurWindows.h" />
+    <ClInclude Include="PetitMoteur3D.h" />
+    <ClInclude Include="PhysicComponent.h" />
+    <ClInclude Include="PhysicManager.h" />
+    <ClInclude Include="PlayerCamera.h" />
+    <ClInclude Include="InputComponent.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="PxPhysicsAPI.forward.h" />
+    <ClInclude Include="RenderComponent.h" />
+    <ClInclude Include="RenderManager.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SimulationManager.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="TunnelGo.h" />
+    <ClInclude Include="TVGo.h" />
+    <ClInclude Include="util.h" />
+    <ClInclude Include="VehicleCreate.h" />
+    <ClInclude Include="VehicleFilterShader.h" />
+    <ClInclude Include="VehicleRaycast.h" />
+    <ClInclude Include="VehicleTireFriction.h" />
+    <ClInclude Include="wheelGo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PetitMoteur3D.ico" />
+    <None Include="small.ico" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PetitMoteur3D.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
