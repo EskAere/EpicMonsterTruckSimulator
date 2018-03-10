@@ -1,7 +1,7 @@
 Equipe Full Metal Bracket
 --------------------------
 Les exécutables sont opérationnels. 
-Ils sont situés dans le dossier .\PetitMoteur3Dv6\PetitMoteur3D
+Ils sont situés dans le dossier .\PetitMoteur3D
 
 Pour la version RELEASE :
 .\PetitMoteur3D\EpicMonsterTruck_RELEASE.exe
@@ -10,21 +10,13 @@ Pour la version DEBUG :
 .\PetitMoteur3D\EpicMonsterTruck_DEBUG.exe
 La version Debug n'est pas recommandée car elle est lente.
 
-Il est possible que l'éxecutable est du mal à tourner sur des petites configurations. 
-La solution a été mise en place sur des GTX1080 et n'a pas subit d'optimisation/de tests de performances sur de plus petites configuration.
-
-Le code est fondé sur le cours opérés par François Jean.
+Il est possible que l'éxecutable ait du mal à tourner sur les petites configurations. 
+La solution a été mise en place sur des GTX1080 et n'a pas subit d'optimisations/tests de performances sur de plus petites configurations.
 --------------------------
 
 Contrôles
 
-Controle changement de vues :
-f1 	- 	caméra monde
-f2 	- 	caméra de debug
-f3 	- 	caméra 3eme personne
-f4 	-	caméra 1ere personne
-
-Controle voiture :
+Contrôles Monster Truck :
 w 	- 	avancer
 s 	- 	reculer 
 a 	- 	tourner à gauche
@@ -32,7 +24,13 @@ d 	- 	tourner à droite
 lshift 	- 	booster
 space 	- 	frein à main
 
-Controle Caméra
+Contrôles changement de vues :
+f1 	- 	caméra monde
+f2 	- 	caméra de debug
+f3 	- 	caméra 3eme personne
+f4 	-	caméra 1ere personne
+
+Contrôles Caméra de debug : 
 up 		- 	avancer
 down 		- 	reculer
 gauche 		- 	rotation vers la gauche
