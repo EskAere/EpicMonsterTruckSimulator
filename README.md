@@ -4,11 +4,11 @@ __Team Full Metal Bracket__
 This file explains how to play the game by yourself. 
 
 ## I. Installation 
-Download [EpicMonsterTruckSimulator.zip](https://drive.google.com/open?id=1NxPKUlTtlimSwGLUjB0q0Ltpd4e-1Mgj) and extract it.
-
-Then launch the EpicMonsterTruck_xxxxx.exe.
+Clone the repository, then launch the EpicMonsterTruck_xxxxx.exe.
 - RELEASE version : __.\PetitMoteur3D\EpicMonsterTruck_RELEASE.exe__
 - DEBUG version (very slow) : __.\PetitMoteur3D\EpicMonsterTruck_DEBUG.exe__
+
+You can also download [EpicMonsterTruckSimulator.zip](https://drive.google.com/open?id=12QaJrULi78oC32o8V9_xCSbBbt1bEB00), extract it and launch EpicMonsterTruckSimulator.exe.
 
 ## II. Recommended Configurations
 The game has not been optimized and may be slow on little configurations. 
@@ -30,8 +30,8 @@ It has been developed on :
 - Handbrake : __Space__
 
 #### Changing cameras
-- World : __F1__
-- Debug : __F2__
+- Debug : __F1__
+- World : __F2__
 - Third person : __F3__
 - First person : __F4__
 
